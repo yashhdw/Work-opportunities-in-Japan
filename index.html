@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RisingSunCareers</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="nav">
+        <div class="title">
+            RisingSunCareers
+        </div>
+
+        <div class="features">
+            <ul>
+                <li> <a href="index.html"> Home</a> </li>
+                <li id="about" ><a href="#h1-42">About </a></li>
+                <li><a href="jobListings.html"> Job listings</a></li>
+            </ul>
+
+
+        </div>
+
+        <select id="language-select" name="language">
+            <option value="en">English</option>
+            <option value="de">Japanese</option>
+            <!-- Add more languages as needed -->
+        </select>
+    </nav>
+
+ 
+
+<!-- Main Section  -->
+    <div class="container">
+        <div class="text">
+            Explore Carrer opportunities in Japan
+            <div class="btn">
+                <button id="conbtn"><a href="#exploresec"> Explore </a></button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- About -->
+    <div class="content" id="h1-42">
+
+        <div class="s2text">
+            <div class="wat">
+                <h3> Work at Center of Advancement </h3>
+            </div>
+
+
+            <div id="v18">
+                Japan presents a diverse array of work opportunities for both locals and expatriates alike. Renowned for
+                its
+                technological advancements, the country offers employment prospects in industries such as robotics,
+                electronics,
+                automotive manufacturing, and software development. Moreover, Japan's commitment to innovation fosters a
+                fertile ground
+                for research and development, attracting scientists, engineers, and researchers from around the globe.
+                With
+                a thriving
+                economy and a strong emphasis on quality and efficiency, there are also ample opportunities in finance,
+                marketing, and
+                consulting sectors.<br>
+                Japan exudes a captivating blend of tradition and innovation. Renowned for
+                its rich cultural heritage, Japan seamlessly intertwines ancient customs with cutting-edge technology.
+            </div>
+
+        </div>
+
+
+        <img class="adv" src="images/adv.jpeg" alt="">
+    </div>
+
+
+    <!-- Explore  -->
+    <div id="exploresec" class="section3">
+
+        <div class="s3txt">
+            <h1>Let's explore opportunities in Japan</h1>
+        </div>
+
+        <div class="Selects">
+
+            <select id="Domain" name="doma" onchange="updateOptions()">
+                <option value="" disabled selected>Domain</option>
+                <option value="IT">Information Technology</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Finance">Finance</option>
+                <option value="Education">Education</option>
+ >
+            </select>
+
+
+            <select id="Subdomain" name="subdoma">
+                <option value="" disabled selected>Designation</option>
+                <!-- Options will be dynamically populated here based on the selection in the first dropdown -->
+            </select>
+
+
+            <select id="location" name="loc">
+                <option value="" disabled selected>Location</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Osaka">Osaka</option>
+                <option value="Kyoto">Kyoto</option>
+                <option value="Yokohama">Yokohama</option>
+                <option value="Nagoya">Nagoya</option>
+                <option value="Fukuoka">Fukuoka</option>
+                <option value="Sapporo">Sapporo</option>
+                <option value="Sendai">Sendai</option>
+                <option value="Hiroshima">Hiroshima</option>
+                <option value="Kobe">Kobe</option>
+            </select>
+
+
+            <div class="btn">
+                <button id="bluebtn">Search </button>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

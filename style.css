@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+}
+
+#nav {
+    background-color: #d6d7d7;
+    display: flex;
+    gap: 171px;
+    height: 8vh;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    opacity: 1;
+    border-bottom: 1px solid black;
+    width: 100vw;
+}
+
+.features>ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+    margin: 5px;
+
+}
+
+.features {
+    width: 27vw;
+}
+
+.features>ul>li {
+    font-size: 16px;
+    cursor: pointer;
+    min-width: 96px;
+    max-height: 19px;
+    font-weight: 600;
+
+
+
+}
+
+.features>ul>li>a,
+#conbtn>a {
+    text-decoration: none;
+    color: black;
+}
+
+.features>ul>li:hover {
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-color: rgb(14, 14, 14);
+    font-size: 20px;
+    font-weight: 600;
+    transition: ease-in-out 0.3s;
+    text-decoration-thickness: 2px;
+}
+
+
+
+
+
+
+.joblistings {
+    background-image: url(images/jobss.jpeg);
+    height: max(92vh, 767px);
+    /* width: 100vw; */
+    background-size: max(100vw, 1750px);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.jobssecbtn {
+    position: absolute;
+    left: 88px;
+    bottom: 40px;
+}
+
+.jobdomain {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+
+.title {
+    margin-left: 27px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+
+
+
+
+#language-select {
+    background-color: #f2f4f1;
+    position: fixed;
+    right: 51px;
+    width: 75px;
+    height: 25px;
+    border-radius: 15px;
+
+}
+
+.container {
+    border: black 2px solid;
+    height: max(90vh, 800px);
+    width: 100vw;
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    /* background-size: max(100vw, 1300px); */
+    position: relative;
+
+
+}
+
+
+.text {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    position: absolute;
+    left: 39px;
+    bottom: 11px;
+}
+
+
+#conbtn {
+    height: 35px;
+    width: 77px;
+    border-radius: 8px;
+    font-weight: 600;
+
+
+}
+
+
+#conbtn:hover {
+    cursor: pointer;
+    width: 80px;
+    transition: all 0.5s;
+
+}
+
+.content {
+    background-color: hsl(180, 33%, 98%);
+    ;
+    height: 65vh;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.s2text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wat {
+    margin-bottom: 10px;
+    ;
+}
+
+.wat>h3 {
+    font-size: 25px;
+}
+
+
+#v18 {
+    width: 55vw;
+    font-size: 20px;
+    font-weight: 50;
+
+}
+
+.adv {
+    height: 102%;
+    width: 37%;
+}
+
+
+
+.section3 {
+
+    background-color: hsl(180, 33%, 98%);
+    ;
+    ;
+    height: 50vh;
+    width: 96vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+#bghj {
+    background-color: rgb(240, 240, 240);
+
+}
+
+
+
+
+#bluebtn {
+    background-color: rgb(26, 220, 250);
+    color: white;
+    height: 35px;
+    width: 77px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-left: 4px;
+
+}
+
+#bluebtn:hover {
+    width: 80px;
+    transition: all 0.5s;
+
+}
+
+.Selects {
+    margin-bottom: 70px;
+
+}
+
+.Selects>select {
+    background-color: rgb(237, 231, 231);
+    width: 21vw;
+    height: 8vh;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 11px;
+}
+
+.Selects>select>option {
+    background-color: white;
+
+}
+
+.btn {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
+
+
+
+/* Media queries in order to make website responsive */
+
+@media (max-width: 791px) {
+    #nav {
+        gap: 70px;
+
+    }
+
+    .title {
+        margin-left: 9px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .features>ul>li {
+        font-size: 15px;
+
+        min-width: 73px;
+
+
+
+
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    #v18 {
+        width: 52vw;
+        font-size: 13px;
+        font-weight: 28;
+    }
+
+    .adv {
+        height: 38%;
+        width: 41%;
+    }
+
+    .joblistings {
+        background-image: url(images/ver.jpeg);
+        max-height: 700px;
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+
+    .jobdomain {
+        color: #eed0d0;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+
+}
+
+
+#bghj {
+    border: 1px solid black;
+    margin: 7px;
+    padding: 7px;
+    width: 94vw;
+}
+
+@media (max-width: 565px) {
+
+    #nav {
+        gap: 10px;
+
+    }
+
+    .title {
+        margin-left: 9px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .features>ul>li {
+        font-size: 15px;
+        min-width: 73px;
+    }
+
+    #language-select {
+
+        width: 67px;
+
+    }
+
+    .section3 {
+        padding: 10px;
+    }
+
+
+
+    .text {
+        font-size: 22px;
+        position: absolute;
+        left: 16px;
+        bottom: 17px;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 510px) {
+    #language-select {
+
+        display: none;
+
+    }
+
+
+    .title {
+        margin-left: 4px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    #v18 {
+        width: 89vw;
+        font-size: 13px;
+        font-weight: 28;
+        margin-bottom: 11px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .adv {
+        height: 38%;
+        width: 93%;
+    }
+
+
+
+}
+
+@media (max-width: 396px) {
+    .features>ul>li {
+        font-size: 9px;
+        min-width: 58px;
+    }
+
+    .title {
+        margin-left: 4px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+
+    #about {
+        display: none;
+    }
+
+    .container {
+        height: 84vh;
+    }
+
+    .wat>h3 {
+        font-size: 13px;
+    }
+
+
+
+
+    .jobssecbtn {
+        position: absolute;
+        left: 38px;
+        bottom: 32px;
+    }
+
+    .content {
+        height: 78vh;
+    }
+
+
+}
+
+
+@media (max-width: 211px) {
+
+    #v18 {
+
+        font-size: 10px;
+
+    }
+
+    .adv {
+        height: 16%;
+        width: 93%;
+    }
+
+    h1 {
+
+        font-size: 9px;
+
+    }
+
+
+}
+
